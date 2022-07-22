@@ -6,7 +6,7 @@ coverY: 0
 
 # Welcome!
 
-**该文档为SRVFI-Raws Encode作品发布指南，示例代码块均为BBcode**
+**SRVFI-Raws 出品，论坛发布示例代码块为BBcode**
 
 **参考各大pt站点的官组以及**[**VCB-Studio**](https://vcb-s.com/)**，感谢！**
 
