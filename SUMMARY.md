@@ -2,6 +2,10 @@
 
 * [Welcome!](README.md)
 
+## 从零开始的PT速成指南
+
+* [Abstract](cong-ling-kai-shi-de-pt-su-cheng-zhi-nan/abstract.md)
+
 ## 制作流程的规范
 
 * [封装的注意要点](zhi-zuo-liu-cheng-de-gui-fan/feng-zhuang-de-zhu-yi-yao-dian.md)
