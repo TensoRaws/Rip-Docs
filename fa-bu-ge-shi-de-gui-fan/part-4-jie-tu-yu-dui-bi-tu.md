@@ -4,6 +4,10 @@ description: 没有对比没有伤害
 
 # PART 4 截图（与对比图）
 
+{% hint style="info" %}
+建议使用sm.ms图床，**不建议**使用路过图床（禁止上传-卡通漫画-包括ACG/二次元/动漫游戏等）
+{% endhint %}
+
 logo图-废话-logo图后空行，上传三张以上的Source-Encode对比图，无对比图则不用Source->Encode的logo
 
 ![SRVFI\_Screens](../.gitbook/assets/Screens\_01.png)
