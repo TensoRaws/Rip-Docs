@@ -13,6 +13,7 @@
 
 ## 发布格式的规范
 
+* [😅 使用Python快速生成简介](fa-bu-ge-shi-de-gui-fan/shi-yong-python-kuai-su-sheng-cheng-jian-jie.md)
 * [PART 1 总声明](fa-bu-ge-shi-de-gui-fan/part-1-zong-sheng-ming.md)
 * [PART 2 简介](fa-bu-ge-shi-de-gui-fan/part-2-jian-jie.md)
 * [PART 3 MediaINFO](fa-bu-ge-shi-de-gui-fan/part-3-mediainfo.md)

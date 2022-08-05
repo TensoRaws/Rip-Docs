@@ -39,7 +39,7 @@ https://github.com/bilibili/ailab/tree/main/Real-CUGAN
 深兔 / 兔泽深澄 : 水瀬いのり
 
 (来源于 https://bgm.tv/subject/315375 )
-[quote][font=Courier New][url=https://sm.ms/image/Pq7IXvwe8FTruoK][img]https://s2.loli.net/2022/07/10/Pq7IXvwe8FTruoK.png[/img][/url]
+[quote][font=Courier New][url=https://sm.ms/image/YrDuWZ91stKFzLl][img]https://s2.loli.net/2022/08/05/YrDuWZ91stKFzLl.png[/img][/url]
 RELEASE.NAME........: [SRVFI-Raws&keprice] Sword Art Online the Movie Progressive Aria of a Starless Night [BDrip 2160p HEVC Main10 DTS TrueHD].mkv
 RELEASE.DATE........: 2022-07-09 
 RELEASE.SIZE........: 26.4 GiB
@@ -62,7 +62,7 @@ SUBTITLE#02.........: ENG, PGS
 SOURCE..............: Encode
 UPLOADER............: Keprice@SRVFI-Raws
 [/font][/quote]
-[url=https://sm.ms/image/DzljJvUV1YupBsr][img]https://s2.loli.net/2022/07/10/DzljJvUV1YupBsr.png[/img][/url]
+[url=https://sm.ms/image/Ea3jHpRGi76fqr4][img]https://s2.loli.net/2022/08/05/Ea3jHpRGi76fqr4.png[/img][/url]
 [b] right click on the image and open it in a new tab to see the full-size one [/b]
 [url=https://sm.ms/image/9iZHPU5hJnFlWIg][img]https://s2.loli.net/2022/07/10/9iZHPU5hJnFlWIg.png[/img][/url]
 
