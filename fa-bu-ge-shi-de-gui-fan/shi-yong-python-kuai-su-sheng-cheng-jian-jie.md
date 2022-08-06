@@ -8,6 +8,8 @@ description: 坚决不动手
 该脚本尚未完善，如有bug请向Nang@SRVFI-Raws反馈
 {% endhint %}
 
+#### 请先部署[pt-gen](https://github.com/Rhilip/pt-gen-cfworker)
+
 ### 所需依赖
 
 * opencv-python
@@ -31,14 +33,15 @@ import random
 class PtGenPlus:
     def __init__(self):
         self.smms_pic_url = "https://sm.ms/api/v2/upload"  # smms图床上传网址
-        self.smms_pic_api = "NIx23JsYkdf1145141919810aMkmjp"  # smms图床API
+        self.smms_pic_api = "1145141919810"  # smms图床API
         self.pt_gen_url = "https://ptgen.srvfi.top/"  # ptgen的域名
         self.pt_gen_api = "&apikey=8hFJLiSqGRkHcPAu"  # ptgen的APIkey
         self.bgm_douban_imdb_url = "https://movie.douban.com/subject/27624762"  # bgm，豆瓣，imdb详细url
-        self.source_path = "NCOP1.m2ts"  # 原视频地址
-        self.encode_path = "NCOP1.mp4"  # Encode视频地址
+        self.source_path = ""  # 原视频地址
+        self.encode_path = ""  # Encode视频地址
         self.encode_or_dl = "Encode"  # Encode or WEB-DL or Remux
         self.uploader_name = "Keprice@SRVFI-Raws"  # 上传者
+        self.upload_pic_num = 5  # 每组截图上传数量，建议3~6左右
 
     def final_info_generate(self):
         with open("final_infomation.txt", "w", encoding="utf-8") as final_infomation:
@@ -56,9 +59,19 @@ class PtGenPlus:
         with open("final_infomation.txt", "a", encoding="utf-8") as final_infomation:
             for i1 in self.get_media_info():
                 final_infomation.write(i1)
-        with open("final_infomation.txt", "a", encoding="utf-8") as final_infomation:
-            for i2 in self.get_screens():
-                final_infomation.write(i2)
+            final_infomation.write(
+                '[url=https://sm.ms/image/Ea3jHpRGi76fqr4]' +
+                '[img]https://s2.loli.net/2022/08/05/Ea3jHpRGi76fqr4.png[/img][/url]\n' +
+                '[b] right click on the image and open it in a new tab to see the full-size one [/b]\n')
+
+        if self.encode_path != "" and self.source_path != "":
+            with open("final_infomation.txt", "a", encoding="utf-8") as final_infomation:
+                for i2 in self.get_screens():
+                    final_infomation.write(i2)
+        else:
+            with open("final_infomation.txt", "a", encoding="utf-8") as final_infomation:
+                for i2 in self.get_screens_single():
+                    final_infomation.write(i2)
 
     def get_pt_gen_info(self):
         pt_gen_response = requests.get(self.pt_gen_url + '?url=' + self.bgm_douban_imdb_url + self.pt_gen_api)
@@ -67,14 +80,17 @@ class PtGenPlus:
 
     def get_media_info(self):
         write_info_list = []
-        encode_media_info = pymediainfo.MediaInfo.parse(self.encode_path, output="JSON")
+        write_path = self.encode_path
+        if self.encode_path == "":
+            write_path = self.source_path
+        encode_media_info = pymediainfo.MediaInfo.parse(write_path, output="JSON")
         encode_tracks = json.loads(encode_media_info)["media"]["track"]
         write_info_list.append(
             "\n\n" + "[quote][font=Courier New][url=https://sm.ms/image/YrDuWZ91stKFzLl]" +
             "[img]https://s2.loli.net/2022/08/05/YrDuWZ91stKFzLl.png[/img][/url]")
         write_info_list.append(
             "\n" + "RELEASE.NAME........: " +
-            str(pathlib.PureWindowsPath(self.encode_path)).split("\\")[-1])
+            str(pathlib.PureWindowsPath(write_path)).split("\\")[-1])
         write_info_list.append(
             "\n" + "RELEASE.DATE........: " +
             time.strftime("%Y-%m-%d", time.localtime()))
@@ -166,8 +182,8 @@ class PtGenPlus:
             print("视频可能有问题，帧数相差" + str(frames_num_1 - frames_num_2))
             print('Source视频总帧数：' + str(frames_num_1))
             print('Encode视频总帧数：' + str(frames_num_2))
-
-        n = 5  # 这是按间隔取帧的参数，例如这里是5的话会把视频按时间轴从头到尾分为7段，去掉头段和尾段，取中间五段中的随机帧
+        # 这是按间隔取帧的参数，例如这里是5的话会把视频按时间轴从头到尾分为7段，去掉头段和尾段，取中间五段中的随机帧
+        n = self.upload_pic_num
         split_num = int(frames_num_1 / (n + 2))  # 切分块的帧数
         root_path = os.path.abspath('.')
         output_dir = "%s/compare_pics" % root_path  # 图片保存路径
@@ -176,12 +192,7 @@ class PtGenPlus:
 
         split_num_deal = split_num
         pic_num = []
-        # 开头的固定内容
-        pic_num.append(
-            '[url=https://sm.ms/image/Ea3jHpRGi76fqr4]' +
-            '[img]https://s2.loli.net/2022/08/05/Ea3jHpRGi76fqr4.png[/img][/url]\n')
-        pic_num.append(
-            '[b] right click on the image and open it in a new tab to see the full-size one [/b]\n')
+        # 对比S-Encode logo
         pic_num.append(
             '[url=https://sm.ms/image/9iZHPU5hJnFlWIg]' +
             '[img]https://s2.loli.net/2022/07/10/9iZHPU5hJnFlWIg.png[/img][/url]\n')
@@ -206,37 +217,84 @@ class PtGenPlus:
             files = {'smfile': open(path_s, 'rb')}
             res_s = requests.post(url, files=files, headers=headers).json()  # 返回json
             res_s_url = res_s['data']['url']  # 返回的url
-            res_s__name = res_s_url[31:46]  # 返回的url对应的文件名
-            # print('源视频截图 '+path_s+':'+res_s_url)
-
-            pic_num.append('[url=https://sm.ms/image/' + res_s__name + '][img]' + res_s_url + '[/img][/url] ')
+            res_s_page = res_s['data']['page']  # 返回的page
+            pic_num.append('[url=' + res_s_page + '][img]' + res_s_url + '[/img][/url] ')
 
             cv2.imwrite(path_e, e_1)
             files = {'smfile': open(path_e, 'rb')}
             res_e = requests.post(url, files=files, headers=headers).json()
             res_e_url = res_e['data']['url']
-            res_e__name = res_e_url[31:46]
-            # print('Encode视频截图 ' + path_s + ':' + res_e_url)
-
-            pic_num.append('[url=https://sm.ms/image/' + res_e__name + '][img]' + res_e_url + '[/img][/url]\n')
+            res_e_page = res_e['data']['page']
+            pic_num.append('[url=' + res_e_page + '][img]' + res_e_url + '[/img][/url]\n')
 
             split_num_deal -= random_frame
             split_num_deal += split_num
-            # print(pic_num)
+
+        return pic_num
+
+    def get_screens_single(self):
+        headers = {'Authorization': self.smms_pic_api}
+        url = self.smms_pic_url
+        single_path = self.encode_path
+        is_encode_or_source_str = "_encode_"
+        if self.encode_path == "":
+            single_path = self.source_path
+            is_encode_or_source_str = "_source_"
+
+        cap_single = cv2.VideoCapture(single_path)
+        frames_num_single = int(cap_single.get(7))
+        # 这是按间隔取帧的参数，例如这里是5的话会把视频按时间轴从头到尾分为7段，去掉头段和尾段，取中间五段中的随机帧
+        n = self.upload_pic_num
+        split_num = int(frames_num_single / (n + 2))  # 切分块的帧数
+        root_path = os.path.abspath('.')
+        output_dir = "%s/single_pics" % root_path  # 图片保存路径
+        output_dir = output_dir + "__" + str(pathlib.PureWindowsPath(single_path)).split("\\")[-1]
+        os.makedirs(output_dir, exist_ok=True)
+
+        split_num_deal = split_num
+        pic_num = []
+
+        for i in range(n):
+            print("截图上传中...( ˶º̬˶ )୨⚑...第" + str(i + 1) + "组，共有" + str(n) + "组")
+            random_frame = random.randint(int(split_num / (-2)), int(split_num / 2))
+            split_num_deal += random_frame
+            cap_single.set(cv2.CAP_PROP_POS_FRAMES, split_num_deal)
+            _, e_s_1 = cap_single.read()
+            path_s_or_e = output_dir + "/" + str(pathlib.PureWindowsPath(self.encode_path)).split("\\")[-1] + "__" + \
+                          str(split_num_deal) + is_encode_or_source_str + '.jpg'
+            cv2.imwrite(path_s_or_e, e_s_1)
+            files = {'smfile': open(path_s_or_e, 'rb')}
+            res_s = requests.post(url, files=files, headers=headers).json()  # 返回json
+            res_s_url = res_s['data']['url']  # 返回的url
+            res_s_page = res_s['data']['page']  # 返回的page
+            pic_num.append('[url=' + res_s_page + '][img]' + res_s_url + '[/img][/url]\n')
+            split_num_deal -= random_frame
+            split_num_deal += split_num
         return pic_num
 
 
 if __name__ == "__main__":
     worker01 = PtGenPlus()
     worker01.smms_pic_url = "https://sm.ms/api/v2/upload"  # smms图床上传网址
-    worker01.smms_pic_api = "NIxPf1145141919810ATYCTp"  # smms图床API
+
+    # ---------------------...( ˶º̬˶ )୨⚑...---------------------
+    # ---------------------以下为所需设定内容---------------------
+    worker01.smms_pic_api = "1145141919810"  # smms图床API
     worker01.pt_gen_url = "https://ptgen.srvfi.top/"  # ptgen的域名
     worker01.pt_gen_api = "&apikey=8hFJLiSqGRkHcPAu"  # ptgen的APIkey
     worker01.uploader_name = "Keprice@SRVFI-Raws"  # 上传者
     worker01.encode_or_dl = "Encode"  # Encode or WEB-DL or Remux
+    worker01.upload_pic_num = 5  # 每组截图上传数量，建议3~6左右
+    # ---------------------以上为所需设定内容---------------------
+    # ---------------------...( ˶º̬˶ )୨⚑...---------------------
+
+    if worker01.smms_pic_api == "":
+        print("smms图床API未设定")
+    print("当前资源类型：" + worker01.encode_or_dl +
+          "   当前上传者：" + worker01.uploader_name + "   当前每组截图上传数量：" + str(worker01.upload_pic_num))
+    print("如果不需要对比图，仅填写Encode路径或Source路径即可")
     worker01.bgm_douban_imdb_url = input("请输入豆瓣，bangumi，IMDB资源详情界面的url：")
     worker01.encode_path = input("请输入Encode资源的路径：")
     worker01.source_path = input("请输入Source资源的路径：")
     worker01.final_info_generate()
-
 ```
