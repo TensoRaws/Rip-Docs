@@ -32,6 +32,7 @@ import random
 
 class PtGenPlus:
     def __init__(self):
+        self.mini_essay = ""  # 写在开头的小作文
         self.smms_pic_url = "https://sm.ms/api/v2/upload"  # smms图床上传网址
         self.smms_pic_api = "1145141919810"  # smms图床API
         self.pt_gen_url = "https://ptgen.srvfi.top/"  # ptgen的域名
@@ -45,20 +46,12 @@ class PtGenPlus:
 
     def final_info_generate(self):
         with open("final_infomation.txt", "w", encoding="utf-8") as final_infomation:
-            final_infomation.write(
-                "[quote][b][size=3][color=blue]原盘来自U2，感谢原发布者[/color][/size][/b][/quote]\n" +
-                "[quote][b][size=3]原盘的画质尚可，主要问题的低分辨率拉伸带来的模糊。" +
-                "我们使用基于生成对抗网络的动漫图像超分辨率模型 RealCUGAN-Pro " +
-                "(Real Cascade U-Nets Generative Adversarial Networks) 超分辨率至2160P，" +
-                "进行了常规的处理，轻微改变了画风\nThe Source quality is relatively acceptable" +
-                ", and the major problem is blurring caused by upscaling from low resolution." +
-                "We upscaled it to 2160P with RealCUGAN-Pro(AI Super Resolution Model for Anime Images " +
-                "Based on Generative Adversarial Networks), treated it with some mild regular processing" +
-                ", slightly changed the style.[/size][/b][/quote]\n\n")
+            final_infomation.write(self.mini_essay)
             final_infomation.write(self.get_pt_gen_info())
         with open("final_infomation.txt", "a", encoding="utf-8") as final_infomation:
             for i1 in self.get_media_info():
                 final_infomation.write(i1)
+            # 固定内容
             final_infomation.write(
                 '[url=https://sm.ms/image/Ea3jHpRGi76fqr4]' +
                 '[img]https://s2.loli.net/2022/08/05/Ea3jHpRGi76fqr4.png[/img][/url]\n' +
@@ -279,6 +272,17 @@ if __name__ == "__main__":
 
     # ---------------------...( ˶º̬˶ )୨⚑...---------------------
     # ---------------------以下为所需设定内容---------------------
+    # 开头的小作文，自行修改
+    worker01.mini_essay = "[quote][b][size=3][color=blue]原盘来自U2，感谢原发布者[/color][/size][/b][/quote]\n" + \
+                          "[quote][b][size=3]原盘的画质尚可，主要问题的低分辨率拉伸带来的模糊。" + \
+                          "我们使用基于生成对抗网络的动漫图像超分辨率模型 RealCUGAN-Pro " + \
+                          "(Real Cascade U-Nets Generative Adversarial Networks) 超分辨率至2160P，" + \
+                          "进行了常规的处理，轻微改变了画风\nThe Source quality is relatively acceptable" + \
+                          ", and the major problem is blurring caused by upscaling from low resolution." + \
+                          "We upscaled it to 2160P with RealCUGAN-Pro(AI Super Resolution Model for Anime Images " + \
+                          "Based on Generative Adversarial Networks), treated it with some mild regular processing" + \
+                          ", slightly changed the style.[/size][/b][/quote]\n\n"
+    # ---------------------...( ˶º̬˶ )୨⚑...---------------------
     worker01.smms_pic_api = "1145141919810"  # smms图床API
     worker01.pt_gen_url = "https://ptgen.srvfi.top/"  # ptgen的域名
     worker01.pt_gen_api = "&apikey=8hFJLiSqGRkHcPAu"  # ptgen的APIkey
