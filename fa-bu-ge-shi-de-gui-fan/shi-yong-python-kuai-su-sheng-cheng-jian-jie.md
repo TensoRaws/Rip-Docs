@@ -253,7 +253,7 @@ class PtGenPlus:
             split_num_deal += random_frame
             cap_single.set(cv2.CAP_PROP_POS_FRAMES, split_num_deal)
             _, e_s_1 = cap_single.read()
-            path_s_or_e = output_dir + "/" + str(pathlib.PureWindowsPath(self.encode_path)).split("\\")[-1] + "__" + \
+            path_s_or_e = output_dir + "/" + str(pathlib.PureWindowsPath(single_path)).split("\\")[-1] + "__" + \
                           str(split_num_deal) + is_encode_or_source_str + '.jpg'
             cv2.imwrite(path_s_or_e, e_s_1)
             files = {'smfile': open(path_s_or_e, 'rb')}
