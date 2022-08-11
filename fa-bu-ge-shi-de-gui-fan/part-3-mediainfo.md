@@ -4,10 +4,6 @@ description: MediaInfo的排版，有微小出入亦可接受
 
 # PART 3 MediaINFO
 
-首先当然是logo图啦
-
-![SRVFI\_General\_Info](../.gitbook/assets/Info\_01.png)
-
 使用**Courier New字体**对齐内容，每一项小标题全部大写，统一使用英文逗号，大小写规范如下
 
 {% code title="MediaInfo排版规范" %}
