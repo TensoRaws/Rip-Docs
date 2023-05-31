@@ -8,13 +8,13 @@ description: 介绍资源内容
 
 **建议动漫优先使用Bangumi简介，影视使用Douban**
 
-****[**PT-gen**](https://github.com/Rhilip/pt-gen-cfworker)：快速生成简介的工具
+[**PT-gen**](https://github.com/Rhilip/pt-gen-cfworker)：快速生成简介的工具
 
 [**豆瓣资源下载大师**](https://greasyfork.org/zh-CN/scripts/329484-%E8%B1%86%E7%93%A3%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E5%A4%A7%E5%B8%88-1%E7%A7%92%E6%90%9E%E5%AE%9A%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1-%E9%9F%B3%E4%B9%90-%E5%9B%BE%E4%B9%A6%E4%B8%8B%E8%BD%BD)：快速生成豆瓣简介的油猴脚本
 
 ![](../.gitbook/assets/douban-helper.png)
 
-****[**Bangumi - Info Export**](https://github.com/Rhilip/PT-help/blob/master/docs/js/Bangumi%20-%20Info%20Export.user.js)：快速生成Bangumi简介的油猴脚本
+[**Bangumi - Info Export**](https://github.com/Rhilip/PT-help/blob/master/docs/js/Bangumi%20-%20Info%20Export.user.js)：快速生成Bangumi简介的油猴脚本
 
 进入资源详情界面，自动生成并复制到剪贴板
 
@@ -62,7 +62,7 @@ description: 介绍资源内容
 
 ### _**示例2 Douban**_
 
-美化版排版如下，**仅供参考，建议直接用工具生成的**
+因为np网站显示bug，故给出一个美化版排版规范。如下，**仅供参考，建议还是直接用工具生成的**
 
 第一行为图片，空一行，每个小标题后不空行, 演员之间用**"** / **"**分割
 
@@ -90,7 +90,7 @@ IMDb链接　https://www.imdb.com/title/tt12191076/
 简　　介　第四季将讲述一群机器人，在偏离程序员所设计的剧本后所发生的一些异常行为的故事。
 ```
 
-_****_
+
 
 
 

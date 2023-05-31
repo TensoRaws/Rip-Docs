@@ -14,12 +14,7 @@ description: 没有对比没有伤害
 
 ### _示例_
 
-**效果如下**
-
-![04eg](../.gitbook/assets/part\_04eg.PNG)
-
 ```
-[url=https://sm.ms/image/DzljJvUV1YupBsr][img]https://s2.loli.net/2022/07/10/DzljJvUV1YupBsr.png[/img][/url]
 [b] right click on the image and open it in a new tab to see the full-size one [/b]
 [url=https://sm.ms/image/9iZHPU5hJnFlWIg][img]https://s2.loli.net/2022/07/10/9iZHPU5hJnFlWIg.png[/img][/url]
 

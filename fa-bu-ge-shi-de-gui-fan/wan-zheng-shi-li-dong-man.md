@@ -6,8 +6,10 @@ description: 完整BBcode代码块
 
 ```
 [quote][b][size=3][color=blue]原盘来自ychx@tsdm[/color][/size][/b][/quote]
-[quote][b][size=3]剧场版的画质一般，线条有明显的低分辨率拉伸造成的轻微锯齿
-使用基于生成对抗网络的动漫图像超分辨率模型 RealCUGAN-Pro (Real Cascade U-Nets Generative Adversarial Networks) 超分辨率至2160P，进行了常规的锐化和降噪
+[quote][b][size=3]剧场版的画质一般，线条有明显的低分辨率拉伸造成的锯齿
+使用基于生成对抗网络的动漫图像超分辨率模型 RealCUGAN-Pro 
+(Real Cascade U-Nets Generative Adversarial Networks) 
+超分辨率至2160P，进行了常规的锐化和降噪
 The MOVIE's image quality is average, and has slight line aliasing caused by upscaling from low resolution.
 Upscale to 2160P with RealCUGAN-Pro(AI Super Resolution Model for Anime Images Based on Generative Adversarial Networks), compensatory sharpen and adaptive denoise.
 https://github.com/bilibili/ailab/tree/main/Real-CUGAN
@@ -40,7 +42,7 @@ https://github.com/bilibili/ailab/tree/main/Real-CUGAN
 
 (来源于 https://bgm.tv/subject/315375 )
 [quote][font=Courier New][url=https://sm.ms/image/YrDuWZ91stKFzLl][img]https://s2.loli.net/2022/08/05/YrDuWZ91stKFzLl.png[/img][/url]
-RELEASE.NAME........: [SRVFI-Raws&keprice] Sword Art Online the Movie Progressive Aria of a Starless Night [BDrip 2160p HEVC Main10 DTS TrueHD].mkv
+RELEASE.NAME........: Sword.Art.Online.the.Movie.Progressive.Aria.of.a.Starless.Night.2021.2160p.HEVC.10bit.TrueHD7.1.keprice@SRVFI-Raws.mkv
 RELEASE.DATE........: 2022-07-09 
 RELEASE.SIZE........: 26.4 GiB
 RELEASE.FORMAT......: Matroska
@@ -62,6 +64,7 @@ SUBTITLE#02.........: ENG, PGS
 SOURCE..............: Encode
 UPLOADER............: Keprice@SRVFI-Raws
 [/font][/quote]
+
 [url=https://sm.ms/image/Ea3jHpRGi76fqr4][img]https://s2.loli.net/2022/08/05/Ea3jHpRGi76fqr4.png[/img][/url]
 [b] right click on the image and open it in a new tab to see the full-size one [/b]
 [url=https://sm.ms/image/9iZHPU5hJnFlWIg][img]https://s2.loli.net/2022/07/10/9iZHPU5hJnFlWIg.png[/img][/url]

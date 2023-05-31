@@ -31,12 +31,8 @@ UPLOADER............: Keprice@SRVFI-Raws           //上传者@组织 up.Name@xx
 
 ### _示例_
 
-**效果如下**
-
-![03eg](../.gitbook/assets/part\_03eg.PNG)
-
 ```
-[quote][font=Courier New][url=https://sm.ms/image/Pq7IXvwe8FTruoK][img]https://s2.loli.net/2022/07/10/Pq7IXvwe8FTruoK.png[/img][/url]
+[quote][font=Courier New]
 RELEASE.NAME........: Sword.Art.Online.the.Movie.Progressive.Aria.of.a.Starless.Night.2021.2160p.HEVC.10bit.TrueHD7.1.keprice@SRVFI-Raws.mkv
 RELEASE.DATE........: 2022-07-09 
 RELEASE.SIZE........: 26.4 GiB
