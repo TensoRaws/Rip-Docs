@@ -52,6 +52,6 @@ OVA为Fate.Kaleid.Liner.Prisma.Illya.**OVA**.1080p.BDrip.x265.10bit.FLAC-SRVFI-R
 
 OVA为\[SRVFI-Raws] Fate/Kaleid Liner Prisma Illya **\[OVA] \[1080p HEVC-10bit FLAC]**
 
-第二季应当为：**\[SRVFI-Raws] Fate/Kaleid Liner Prisma Illya S02 \[1080p HEVC-10bit FLAC]**，其余同下
+第二季应当为：**\[SRVFI-Raws] Fate/Kaleid Liner Prisma Illya S02 \[1080p HEVC-10bit FLAC]**，其余同下。第一集为 \[SRVFI-Raws] Fate/Kaleid Liner Prisma Illya S02 **\[01] \[1080p HEVC-10bit FLAC]**
 
-有别名的情况：**\[SRVFI-Raws]** Toaru Kagaku no Railgun S **\[1080p HEVC-10bit FLAC]**
+有别名的情况：**\[SRVFI-Raws]** Fate/Kaleid Liner Prisma Illya SuperStar! **\[1080p HEVC-10bit FLAC]**
