@@ -36,7 +36,7 @@ Fate.Kaleid.Liner.Prisma.Illya.2013.1080p.BluRay.x265.10bit.FLAC-SRVFI-Raws
 
 OVA（一般没有）为 Fate.Kaleid.Liner.Prisma.Illya.**OVA**.1080p.BluRay.x265.10bit.FLAC-SRVFI-Raws
 
-### 命名建议（动漫）
+### 命名建议（Anime）
 
 \[组名] 罗马音 (季数) \[分辨率 编码格式-位深 音频格式]
 
