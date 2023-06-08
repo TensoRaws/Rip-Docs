@@ -18,23 +18,23 @@ description: 规范的命名有助于检索
 对于动漫第一季，应当不写S01。
 {% endhint %}
 
-### 命名建议（通用）&#x20;
+### 命名建议（非Anime）&#x20;
 
-(电影和真人剧集写英文名，动漫剧集和动漫电影则优先填写**罗马音**).(电影写年份，xxxx，如2022)/(剧集则填写**季数**以及**OVA**，如**S**01+**OVA**).(分辨率, 720**p**/1080**p**/2160**p**).(资源来源，蓝光压制填写**B**lu**R**ay（**动漫**则填写**BD**rip），web源压制为**WEB**rip).(编码器，x265/x264).(位深，8**b**it/10**b**it).(音频格式，优先写默认音轨，不写条数，如**FLAC**)-SRVFI-Raws
+(电影和真人剧集写英文名，动漫剧集和动漫电影则优先填写**罗马音**).(电影写年份，xxxx，如2022)/(剧集则填写**季数**，如**S**01).(分辨率, 720**p**/1080**p**/2160**p**).(资源来源，蓝光压制填写**B**lu**R**ay，web源压制为**WEB**rip).(编码器，x265/x264).(位深，8**b**it/10**b**it).(音频格式，优先写默认音轨，不写条数，如**FLAC**)-SRVFI-Raws
 
-**遇到特殊字符或者空格均使用"."代替，结尾仅写组名，英文大小写规定同括号内（需大写的地方已加粗），符号使用英文键盘输入**
+**遇到特殊字符或者空格均使用"."代替，结尾仅写组名，英文大小写规定同括号内（需注意的地方已加粗），符号使用英文输入**
 
 ### _**示例1**_
 
-Fate/Kaleid Liner Prisma Illya （**假设**是动漫电影）的一个1080p x265 10bit FLAC音频的蓝光压制作品可命名为
+Fate/Kaleid Liner Prisma Illya （**假设**是非Anime电影）的一个1080p x265 10bit FLAC音频的蓝光压制作品可命名为
 
-**Fate.Kaleid.Liner.Prisma.Illya.2013.1080p.BDrip.x265.10bit.FLAC-SRVFI-Raws**
+Fate.Kaleid.Liner.Prisma.Illya.2013.1080p.BluRay.x265.10bit.FLAC-SRVFI-Raws
 
-实际上是TV剧集，第一季应写为Fate.Kaleid.Liner.Prisma.Illya.**S01.**1080p.BDrip.x265.10Bit.FLAC-SRVFI-Raws
+实际上是TV剧集，第一季应写为 Fate.Kaleid.Liner.Prisma.Illya.**S01.**1080p.BluRay.x265.10bit.FLAC-SRVFI-Raws
 
-其中第一集为Fate.Kaleid.Liner.Prisma.Illya.**S01E01**.1080p.BDrip.x265.10bit.FLAC-SRVFI-Raws
+其中第一集为 Fate.Kaleid.Liner.Prisma.Illya.**S01E01**.1080p.BluRay.x265.10bit.FLAC-SRVFI-Raws
 
-OVA为Fate.Kaleid.Liner.Prisma.Illya.**OVA**.1080p.BDrip.x265.10bit.FLAC-SRVFI-Raws
+OVA（一般没有）为 Fate.Kaleid.Liner.Prisma.Illya.**OVA**.1080p.BluRay.x265.10bit.FLAC-SRVFI-Raws
 
 ### 命名建议（动漫）
 
