@@ -9,13 +9,11 @@ description: 规范的命名有助于检索
 {% endhint %}
 
 {% hint style="info" %}
-视频文件应放在同一个**文件夹**下（单文件时仍不例外）。
+视频文件应放在同一个**文件夹**下（单文件时仍不例外）。应按每季/电影打包做种，原则上不允许合季发布。
 {% endhint %}
 
 {% hint style="info" %}
-如果该季动漫有别名，则优先填写别名（如炮姐第二季 [Toaru Kagaku no Railgun S](https://anidb.net/anime/9484) 可不填写S02，直接填写罗马音全名）。
-
-对于动漫第一季，应当不写S01。
+如果该季动漫有别名，则优先填写别名（如炮姐第二季 [Toaru Kagaku no Railgun S](https://anidb.net/anime/9484) 可不填写S02，直接填写罗马音全名）。对于动漫第一季，应当不写S01。
 {% endhint %}
 
 ### 命名建议（非Anime）&#x20;
