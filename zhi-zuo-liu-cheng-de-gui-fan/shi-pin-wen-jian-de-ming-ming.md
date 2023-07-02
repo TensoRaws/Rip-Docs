@@ -55,3 +55,9 @@ NCED 01为\[SRVFI-Raws] Fate/Kaleid Liner Prisma Illya **\[NCED 01] \[1080p HEVC
 第二季应当为：**\[SRVFI-Raws] Fate/Kaleid Liner Prisma Illya S02 \[1080p HEVC-10bit FLAC]**，其余同下。第一集为 \[SRVFI-Raws] Fate/Kaleid Liner Prisma Illya S02 **\[01] \[1080p HEVC-10bit FLAC]**
 
 有别名的情况：**\[SRVFI-Raws]** Fate/Kaleid Liner Prisma Illya SuperStar! **\[1080p HEVC-10bit FLAC]**
+
+### 标题填写（Anime）
+
+**\[SRVFI-Raws]** Fate/Kaleid Liner Prisma Illya SuperStar! **\[1080p HEVC-10bit FLAC]** 应该写为
+
+Fate Kaleid Liner Prisma Illya SuperStar 1080p **HEVC 10bit** FLAC
