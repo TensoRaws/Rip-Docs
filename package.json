@@ -1,0 +1,12 @@
+{
+  "name": "SRVFI-Raws-Docs",
+  "version": "1.x.x",
+  "description": "SRVFI-Raws Upload Docs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "SRVFI-Raws",
+  "license": "MIT license",
+  "repository": "https://github.com/SRVFI-Raws/SRVFI-Raws-Docs",
+  "homepage": "https://docs.srvfi.top"
+}
