@@ -4,6 +4,8 @@ description: 感谢VCB-S整理
 
 # 常用表述对照（中英）
 
+### ~~我认为这就是一种艺术！~~
+
 ### [常见瑕疵](https://vcb-s.com/archives/4738)
 
 ### 总评画质
